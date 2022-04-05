@@ -1,0 +1,9 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-service
+spec:
+  type: ExternalName
+  externalName: monitoring-stack-kube-prom-prometheus.monitoring.svc.cluster.local
+  ports:
+    - port: 9090
